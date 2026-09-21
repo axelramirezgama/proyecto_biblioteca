@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cien Años de Soledad",
+    "autor": "Gabriel García Márquez",
+    "categoria": "Novela",
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "titulo": "El Algoritmo de la Vida",
+    "autor": "Ada Lovelace",
+    "categoria": "Tecnología",
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "titulo": "Fundamentos de Programación en Python",
+    "autor": "Guido van Rossum",
+    "categoria": "Educación",
+    "disponible": false
+  },
+  {
+    "id": 4,
+    "titulo": "Don Quijote de la Mancha",
+    "autor": "Miguel de Cervantes",
+    "categoria": "Clásicos",
+    "disponible": true
+  }
+]

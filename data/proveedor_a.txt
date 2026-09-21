@@ -1,0 +1,8 @@
+=== CATÁLOGO DE NOVEDADES - PROVEEDOR EDITORIAL ALFA ===
+
+1. "Estructura de Datos en Python" - Autor: Carlos Mendoza - $450.00
+2. "Inteligencia Artificial Práctica" - Autor: Elena Rostova - $620.00
+3. "Diseño de Sistemas Distribuidos" - Autor: Marc Andreessen - $580.00
+
+Estado de la orden: Disponible para adquisición inmediata.
+Tiempo estimado de entrega: 3 a 5 días hábiles.

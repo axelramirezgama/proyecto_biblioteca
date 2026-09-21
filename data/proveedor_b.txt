@@ -1,0 +1,8 @@
+=== LISTA DE REABASTECIMIENTO - PROVEEDOR LIBRERÍA GLOBAL ===
+
+- "Cien Años de Soledad" (5 ejemplares recibidos)
+- "Don Quijote de la Mancha" (3 ejemplares recibidos)
+- "Patrones de Diseño" (2 ejemplares recibidos)
+
+Fecha de recepción física: 15/09/2026
+Estatus de revisión de calidad: Aprobado sin observaciones.

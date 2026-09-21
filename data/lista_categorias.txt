@@ -1,0 +1,7 @@
+=== CATEGORÍAS Y SECCIONES DISPONIBLES EN ESTANTERÍA ===
+
+[SEC-01] Tecnología y Computación
+[SEC-02] Novela y Literatura Hispana
+[SEC-03] Clásicos Universales
+[SEC-04] Ciencias Básicas y Matemáticas
+[SEC-05] Filosofía e Historia
