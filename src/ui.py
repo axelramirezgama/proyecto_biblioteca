@@ -37,7 +37,7 @@ def mostrar_pantalla_carga() -> None:
         # Iteración para incrementar la barra gradualmente en un total de 3 segundos
         for _ in range(10):
             # Pausa breve de 0.3 segundos por paso (Total: 3.0 segundos)
-            time.sleep(0.3)
+            time.sleep(0.5)
             # Incrementa un 10% el progreso de la tarea
             progress.update(tarea, advance=10)
 
@@ -80,6 +80,18 @@ def mostrar_menu_principal() -> None:
     console.print("\n")
     console.print(tabla)
 
+def mostrar_menu_admin():
+    """Menú tabular exclusivo para el administrador."""
+    tabla = Table(title="[bold red]  MENÚ DE ADMINISTRADOR  [/bold red]", show_header=True, header_style="bold magenta")
+    tabla.add_column("Opción", style="dim", width=8, justify="center")
+    tabla.add_column("Acción", style="bold red")
+
+    tabla.add_row("1", "Ver todo el inventario de libros")
+    tabla.add_row("2", "Agregar un libro nuevo al catálogo")
+    tabla.add_row("3", "Cambiar estado de un libro (Disponible/Prestado)")
+    tabla.add_row("4", "Cerrar sesión (Cambiar de usuario)")
+    
+    console.print(tabla)
 
 def mostrar_tabla_archivos(archivos_dict: Dict[int, object]) -> None:
     """Muestra los archivos preexistentes disponibles en formato de tabla (Criterio 4)."""

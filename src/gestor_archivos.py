@@ -55,6 +55,36 @@ def guardar_inventario_json(libros_dict: List[dict]) -> None:
         # Lanza excepción si el sistema operativo no otorga permisos de escritura
         raise PermissionError("No tienes permisos suficientes para escribir en la carpeta 'data/'.")
 
+def agregar_libro(titulo: str, autor: str):
+    """Función de Admin: Agrega un libro nuevo."""
+    libros = cargar_inventario_json()
+    # Calculamos un ID autoincremental
+    nuevo_id = max([lib.get("id", 0) for lib in libros]) + 1 if libros else 1
+    
+    nuevo_libro = {
+        "id": nuevo_id,
+        "titulo": titulo,
+        "autor": autor,
+        "disponible": True
+    }
+    libros.append(nuevo_libro)
+    guardar_inventario_json(libros)
+
+def cambiar_estado_libro(id_libro: int) -> bool:
+    """Función de Admin: Cambia de Disponible a Prestado y viceversa."""
+    libros = cargar_inventario_json()
+    modificado = False
+    
+    for libro in libros:
+        if libro["id"] == id_libro:
+            libro["disponible"] = not libro["disponible"] # Invierte el True/False
+            modificado = True
+            break
+            
+    if modificado:
+        guardar_inventario_json(libros)
+        return True
+    return False # Retorna False si no encontró el ID
 
 def obtener_archivos_preexistentes() -> Dict[int, Path]:
     """

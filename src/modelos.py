@@ -36,12 +36,14 @@ class Usuario:
     def __init__(self, nickname: str):
         # Almacena el apodo o nombre ingresado por el usuario
         self.nickname = nickname.strip()
+        self.es_admin = (self.nickname.lower() == "admin")
     
     def obtener_mensaje_bienvenida(self) -> str:
         """Genera el mensaje de bienvenida usando operadores de string (Criterio 1)."""
         # Formateo del nombre en mayúsculas
         nombre_formateado = self.nickname.upper()
         # Concatenación directa usando operadores de string (+)
-        mensaje = "=== BIENVENIDO/A AL SISTEMA DE BIBLIOTECA, " + nombre_formateado + " ==="
+        mensaje = f"=== BIENVENIDO/A AL SISTEMA DE BIBLIOTECA, {nombre_formateado if not self.es_admin else 'ADMINISTRADOR'} ==="
         # Retorno del mensaje concatenado
         return mensaje
+
